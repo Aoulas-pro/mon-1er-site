@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <!-- Remplace GTM-XXXXXXX par ton vrai identifiant Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ma Page Professionnelle</title>
+  <meta name="description" content="Page professionnelle simple avec presentation, services et contact.">
+
+  <style>
+    :root {
+      --bg: #f7f7f4;
+      --text: #1e1e1c;
+      --muted: #5f625c;
+      --line: #ddddd6;
+      --accent: #245c4f;
+      --accent-dark: #184238;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--line);
+    }
+
+    nav {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 14px;
+      margin-left: 14px;
+    }
+
+    .brand {
+      font-weight: 700;
+      font-size: 17px;
+    }
+
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 44px 20px 64px;
+    }
+
+    .hero {
+      padding: 44px 0 36px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero p {
+      max-width: 680px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 6vw, 58px);
+      line-height: 1.08;
+      max-width: 760px;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 26px;
+    }
+
+    section {
+      padding: 34px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+
+    .card p,
+    section p,
+    li {
+      color: var(--muted);
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 14px;
+      background: var(--accent);
+      color: var(--white);
+      text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 6px;
+      font-weight: 700;
+    }
+
+    .button:hover {
+      background: var(--accent-dark);
+    }
+
+    footer {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 22px 20px 40px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 760px) {
+      nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 0 10px 6px 0;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Remplace GTM-XXXXXXX par ton vrai identifiant Google Tag Manager -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+
+  <header>
+    <nav>
+      <div class="brand">Ma Page Professionnelle</div>
+      <div>
+        <a href="#apropos">A propos</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Bonjour, je suis [Votre Nom]</h1>
+      <p>
+        Je presente ici mon activite, mes services et mes liens de contact.
+        Cette page simple peut etre utilisee comme mini-site pour tester Google Tag Manager,
+        Google Analytics, Meta Pixel ou d'autres outils de suivi.
+      </p>
+      <a class="button" href="#contact">Me contacter</a>
+    </section>
+
+    <section id="apropos">
+      <h2>A propos</h2>
+      <p>
+        Ecrivez ici une presentation courte : qui vous etes, ce que vous faites,
+        a qui vous vous adressez et pourquoi les visiteurs peuvent vous faire confiance.
+      </p>
+    </section>
+
+    <section id="services">
+      <h2>Mes services</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Service 1</h3>
+          <p>Decrivez votre premier service en une ou deux phrases simples.</p>
+        </article>
+        <article class="card">
+          <h3>Service 2</h3>
+          <p>Decrivez votre deuxieme service ou votre offre principale.</p>
+        </article>
+        <article class="card">
+          <h3>Service 3</h3>
+          <p>Ajoutez une autre competence, offre, formation ou accompagnement.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Pourquoi cette page existe</h2>
+      <ul>
+        <li>Publier une page simple sans hebergeur classique.</li>
+        <li>Avoir une URL que l'on peut partager.</li>
+        <li>Installer Google Tag Manager proprement.</li>
+        <li>Tester les visites, les clics et les conversions.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Remplacez ces informations par les votres.
+      </p>
+      <p>
+        Email : <a href="mailto:votreemail@example.com">votreemail@example.com</a><br>
+        WhatsApp : <a href="https://wa.me/212600000000">Envoyer un message</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Ma Page Professionnelle. Tous droits reserves.
+  </footer>
+</body>
+</html>
